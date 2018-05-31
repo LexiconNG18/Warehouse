@@ -1,0 +1,13 @@
+﻿@model Warehouse.Models.Product
+
+<tr>
+    <td>@Html.DisplayFor(product => product.Name)    </td>
+    <td>@Html.DisplayFor(product => product.Price)   </td>
+    <td>@Html.DisplayFor(product => product.Quantity)</td>
+    <td>@Html.DisplayFor(product => product.Category)</td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { Model.Id }) |
+        @Html.ActionLink("Details", "Details", new { Model.Id }) |
+        @Html.ActionLink("Delete", "Delete", new { Model.Id })
+    </td>
+</tr>

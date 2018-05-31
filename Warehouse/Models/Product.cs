@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Warehouse.Models
 {
@@ -22,5 +23,7 @@ namespace Warehouse.Models
         public string Category { get; set; }
 
         public string Description { get; set; }
+
+        public DateTime Created => DateTime.Now;
     }
 }
